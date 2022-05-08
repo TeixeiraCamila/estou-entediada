@@ -1,0 +1,21 @@
+@import url(./reset.css);
+
+@keyframes morph {
+  0%, 100% {
+    border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+  } 33% {
+    border-radius: 72% 28% 48% 48% / 28% 28% 72% 72%;
+  } 60% {
+    border-radius: 100% 56% 56% 100% / 100% 100% 56% 56%;
+  }
+}
+.blob {
+  overflow: hidden;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%; 
+  background: transparent url("https://www.xtrafondos.com/wallpapers/aurora-borelais-en-las-montanas-9382.jpg");
+  background-size: cover;
+  background-position: center;
+  animation: morph 3.7s linear infinite;
+}

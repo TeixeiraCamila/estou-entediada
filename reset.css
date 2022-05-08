@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap");
+
+/* VARIÁVEIS GLOBAIS */
+* {
+  --lightSahdes: #f7f7f6;
+  --darkShades: #3e4049;
+  --spacing: 0.1rem;
+  --radius: 0.5rem;
+  --transition: all 0.3s linear;
+  --max-width: 1170px;
+  --fixed-width: 620px;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  --font: "Nunito", sans-serif;
+}
+
+/* RESETS */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--darkShades);
+  line-height: 1.5;
+  font-size: 0.875rem;
+  color: var(--lightSahdes);
+  font-family: var(--font);
+  font-size: 1.1rem;
+}
+ul {
+  color: inherit;
+  padding-left: 1rem;
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+  color: var(--lightAccent);
+}
+
+main {
+  min-height: 95vh;
+  display: grid;
+  place-items: center;
+}
+button {
+  text-transform: uppercase;
+  background-color: transparent;
+  color: var(--darkShades);
+  padding: 0.375rem 0.75rem;
+  letter-spacing: var(--spacing);
+  display: inline-block;
+  font-size: 0.875rem;
+  border: 2px solid var(--darkShades);
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
+  margin: 0.5rem;
+}
+button:hover i,
+button:hover {
+  color: var(--lightSahdes);
+  background-color: var(--darkShades);
+}
+
+footer {
+  min-height: 5vh;
+  display: block;
+  margin: 0 auto;
+  background-color: var(--darkShades);
+  text-align: center;
+}
+footer a {
+  color: var(--lightSahdes);
+}
+.container {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: var(--max-width);
+  display: grid;
+  place-items: center;
+}
+
+/* DESKTOP */
+@media screen and (min-width: 880px) {
+  
+}
+
+/* MOBILE*/
+@media only screen and (max-width: 880px) { 
+  body {
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+}
+

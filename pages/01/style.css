@@ -1,0 +1,24 @@
+
+* {
+	--px: 50px;
+}
+.game {
+  color: var(--lightSahdes);
+}
+.grid {
+  height: calc(8*var(--px));
+  width:  calc(8*var(--px));
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.grid div {
+  height: var(--px);
+  width: var(--px);
+}
+.score-board {
+  display: flex;
+  justify-content: space-evenly;
+  text-transform: uppercase;
+  font-family:  cursive;
+}

@@ -1,0 +1,36 @@
+@import url(../../reset.css);
+
+.card  {
+  width: 300px;
+  height: 400px;
+  background-color: #333;
+  border-radius: var(--radius);
+  outline: 1px solid rgba(255, 255, 255, .5);
+  outline-offset: -8px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, .1);
+  position: relative;
+  overflow: hidden;
+}
+.card img {
+  width: 300px;
+  height: 500px;
+}
+.card-image {
+  position: absolute;
+  inset: 0;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  opacity: .8;
+  transition: transform .7s;
+}
+.card:hover .card-image {
+  transform: scale(1.35);
+}
+.card-title {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  font-size: 30px;
+  text-shadow: 0 0 1px rgba(0, 0, 0, .5);
+}
