@@ -1,0 +1,25 @@
+@import url(../../reset.css);
+
+.container .card {
+  width: 400px;
+  height: 400px;
+  overflow: hidden auto;
+  perspective: 2px;
+}
+
+.parallax {
+  transform-style: preserve-3d;
+  height: 100%;
+  position: relative;
+}
+
+.parallax::after {
+  content: "";
+  display: block;
+  position: absolute;
+  inset: 0;
+  background: url("https://www.xtrafondos.com/wallpapers/montana-al-atardecer-en-california-9874.jpg");
+  transform: translateZ(-1px) scale(200%);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
